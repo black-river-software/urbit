@@ -1,6 +1,6 @@
 # Official Urbit Docker Image
 
-This is the official Docker image for [Urbit][https://urbit.org]. 
+This is the official Docker image for [Urbit](https://urbit.org). 
 
 Urbit is a clean-slate OS and network for the 21st century.
 
