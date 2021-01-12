@@ -37,4 +37,4 @@ jobs:
 
       - run: |
           version="$(cat ./pkg/urbit/version)"
-          ${nix-build -A skopeo)/bin/skopeo --insecure-policy copy tarball:$(nix-build -A docker-image) docker://${{ secrets.DOCKERHUB_USERNAME }}/urbit:v$version
+          $(nix-build -A skopeo)/bin/skopeo --insecure-policy copy tarball:$(nix-build -A docker-image) docker://${{ secrets.DOCKERHUB_USERNAME }}/urbit:v$version
