@@ -32,6 +32,6 @@ jobs:
           short_description: 'Urbit: a clean-slate OS and network for the 21st century'
           readme_file: 'pkgs/docker-image/README.md'
 
-        run: |
+      - run: |
           version="$(cat ./pkg/urbit/version)"
           ${nix-build -A skopeo)/bin/skopeo --insecure-policy copy tarball:$(nix-build -A docker-image) docker://${{ secrets.DOCKERHUB_USERNAME }}/urbit:v$version
