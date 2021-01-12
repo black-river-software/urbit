@@ -39,7 +39,7 @@ let
     
 in dockerTools.buildImage {
   name = "urbit";
-  tag = "latest";
+  tag = "v${urbit.version}";
   contents = [ bashInteractive urbit startUrbit coreutils ];
   runAsRoot = ''
     #!${bashInteractive}
