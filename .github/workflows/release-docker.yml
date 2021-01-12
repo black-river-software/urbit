@@ -30,7 +30,7 @@ jobs:
           destination_container_repo: ${{ secrets.DOCKERHUB_USERNAME }}/urbit
           provider: dockerhub
           short_description: 'Urbit: a clean-slate OS and network for the 21st century'
-          readme_file: 'pkgs/docker-image/README.md'
+          readme_file: 'pkg/docker-image/README.md'
 
       - run: |
           version="$(cat ./pkg/urbit/version)"
